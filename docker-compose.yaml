@@ -3,7 +3,7 @@ services:
   db:
     image: bitnami/mongodb:5.0.17
     volumes:
-      - mongodb_data:/bitnami/mongodb
+      - mongodb_data_nest_challenge:/bitnami/mongodb
     environment:
       MONGODB_ROOT_PASSWORD: root
       MONGODB_REPLICA_SET_MODE: primary
@@ -18,5 +18,5 @@ services:
     depends_on:
       - db
 volumes:
-  mongodb_data:
+  mongodb_data_nest_challenge:
     driver: local
