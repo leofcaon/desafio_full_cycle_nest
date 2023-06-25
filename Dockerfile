@@ -4,7 +4,7 @@ WORKDIR /home/node/app
 
 RUN apt-get update -y && apt-get install -y openssl
 
-COPY .. .
+COPY . /home/node/app
 
 RUN npm install
 
